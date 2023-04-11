@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 로그인</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js"></script>
+
+
+    
+</head>
+<body>
+    <div id="wrap">
+            <div class="logoArea">
+                <div class="hedderInner">
+                <a href="https://www.naver.com"><img id="logo" src="/img/img-logo.png" ></a>
+            </div>
+        </div>
+
+
+            <ul class="panelWrap"> 
+                <li class="panelitem">
+                    <div class="panelinner">
+                        <div class="idpw">
+                            <div class="inputlow" id="idline">
+                                <span class="icon1">👤</span>
+                                <input type="text" id="UserInputText" value="" placeholder="아이디" >
+                            </div>
+                            <div class="inputlow" id="idline">
+                                <span class="icon1">🔒</span>
+                                <input type="password" id="UserInputTextps" value="" placeholder="비밀번호">
+                            </div>
+                            
+                            <div class="loginKeepArea">
+                                <div class="loginCheck">
+                                    <input type="checkbox" id="keep" class="inputKeep">
+                                    <label for="keep" class="keepText">로그인 상태 유지</label>
+                                </div>
+                            </div>
+                            <div class="errorMessegeArea"></div>
+
+                            <ul class="bottomIdbar">
+                                <li><a href="#">비밀번호 찾기</a></li>
+                                <li><a href="#">아이디 찾기</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <button type="input" class="btnLoginOriginal" id="log.login" onclick="errorMessage()" ><span class="btnText">로그인</span></button>
+                    <button type="input" class="btnLoginNaver" id="log.login"  ><span class="btnText">NAVER 로그인</span></button>
+                    <button type="input" class="btnLoginKakao" id="log.login"  ><span class="btnText">KAKAO 로그인</span></button>
+
+
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
